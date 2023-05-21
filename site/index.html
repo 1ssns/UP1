@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Главная страница</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="jquery.bxslider.js"></script>
+	<link href="jquery.bxslider.css" rel="stylesheet" />
+</head>
+<body>
+	<header id = "1">
+		<div class = "container">
+			<div>
+				<img src = "media/images/logo.png" alt = "Логотип" class = "test-0-logo ">
+			</div>
+			<div class = "menu1">
+				<ul class = "menu">
+					<li><a class = "test-0-nav-1" href="#4">Акции</a></li>
+					<li><a class = "test-0-nav-2" href="#3">Поиск</a></li>
+					<li><a class = "test-0-nav-4" href="register.html">Личный кабинет</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class = "first">
+			<h1 id = "2">Принципы накопления бронирований</h1>
+		</div>
+		<div class = "container1">
+			<div class = "principle principle1">
+				<p class = "text1">Выбрать удобную дату перелета</p>
+			</div>
+			<div class = "principle principle2">
+				<p class = "text1">Накопить больше 50% бронирований на рейс</p>
+			</div>
+			<div class = "principle principle3">
+				<p class = "text1">Получить снижение стоимости</p>
+			</div>
+		</div>
+		<div class = "second">
+			<div class = "slider box">
+				<ul class="bxslider">
+					<li><img src="media/images/slider/airmine.jpg" class = "slider-image"></li>
+					<li><img src="media/images/slider/aircraft.jpg" class = "slider-image"></li>
+					<li><img src="media/images/slider/airbus.jpg" class = "slider-image"></li>
+					<li><img src="media/images/slider/third.jpg" class = "slider-image"></li>
+					<li><img src="media/images/slider/ekipaz.jpg" class = "slider-image"></li>
+				</ul>
+			</div>
+		</div>
+		<div class = "third">
+			<div class = "form" id = "3">
+				<form action="search.html">
+					<div class = "paragraph">
+						<label class = "test-0-fd">Выберите город отправки</label>
+						<select name="country" required="required">
+							<option value="Толька">Толька</option> 
+							<option value="Койнас">Койнас</option> 
+							<option value="Единка">Единка</option>
+							<option value="Единка">Богашево</option> 
+							<option value="Единка">Кневичи</option> 
+							<option value="Единка">Баландино</option> 
+						</select>
+					</div>
+					<div class = "paragraph">
+						<label class = "test-0-fa">Выберите город назначения</label>
+						<select name="country" required="required">
+							<option value="Толька">Толька</option> 
+							<option value="Койнас">Койнас</option> 
+							<option value="Единка">Единка</option>
+							<option value="Единка">Богашево</option> 
+							<option value="Единка">Кневичи</option> 
+							<option value="Единка">Баландино</option> 
+						</select>
+					</div>
+					<div class = "paragraph">
+						<label>Выберите дату отправки туда</label>
+						<input class = "test-0-fdt" type="date" name="dateout" required="required">
+					</div>
+					<div class = "paragraph">
+						<label>Выберите дату отправки обратно</label>
+						<input type="date" class = "test-0-fat" name="dateback" required="required">
+					</div>
+					<div class = "paragraph">
+						<label>Выберите количество пассажиров</label>
+						<input class = "test-0-fnp" type="number" min = "1" max="8" name="pass" required="required">
+					</div>
+					<div class = "paragraph paragraph2">
+						<input type="submit" value="Найти билеты">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class = "zagol">
+			<h1 id = "4">Акции</h1>
+		</div>
+		<div class = "fourth">
+			<div class = "promotions">
+				<div class = "promotion">
+					<h2 class = "test-0-an">Возврат и изменение ваших билетов</h2>
+					<p class = "test-0-ad">Пандемия изменила планы многих путешественников, но мы знаем, что она не будет длиться вечно.
+						Как только все это закончится, мы продолжим исследовать этот мир так, как раньше.
+						Специальные правила, разработанные для этой непростой ситуации, помогут вам отменить поездку.
+						или отложить на потом. <button class = "test-0-abm">Подробнее...</button></p>
+						<img src = "media/images/promotions/promotion1.jpg" class="test-0-ai">
+					</div>
+					<div class = "promotion">
+						<h2 class = "test-0-an">Лучшие предложения</h2>
+						<p class = "test-0-ad">Чтобы снова увидеть улицы, которые были свидетелями так много. Чтобы обнять своих любимых и оглянуться, чтобы увидеть
+							через что вы прошли. И думать о новых мечтах, которые будут такими особенными! <button class = "test-0-abm">Подробнее...</button></p>
+							<img src = "media/images/promotions/promotion2.jpg" class="test-0-ai">
+						</div>
+						<div class = "promotion">
+							<h2 class = "test-0-an">Увидимся чаще</h2>
+							<p class = "test-0-ad">С начала января мы расширяем географию полетов по России, чтобы вы могли
+								чаще видеться с любимыми. Выбирайте нашу компанию, чтобы лететь туда, где вас всегда ждут. <button class = "test-0-abm">Подробнее...</button></p>
+								<img src = "media/images/promotions/promotion3.jpg" class="test-0-ai">
+							</div>
+							<div class = "promotion">
+								<h2 class = "test-0-an">Все снова включено</h2>
+								<p class = "test-0-ad">С 10 августа мы возобновим полеты в Турцию. Рейсы из Москвы в Анталию будут выполняться дважды
+									в день ежедневно, а рейсы по маршруту Москва — Даламан будут выполняться от трех до семи раз в неделю. <button class = "test-0-abm">Подробнее...</button></p>
+									<img src = "media/images/promotions/promotion4.jpg" class="test-0-ai">
+								</div>
+							</div>
+						</div>
+						<div class = "zagol">
+							<h1 id = "5">Отзывы пассажиров</h1>
+						</div>
+						<div class = "fifth">
+							<div class = "reviews">
+								<div class = "review">
+									<div class = "left">
+										<div class = "name">
+											<p>Илья Шаров</p>
+										</div>
+										<div class = "user-img">
+											<img src = "media/images/user.png" class = "profile-image">
+										</div>
+									</div>
+									<div class = "right">
+										<div class = "stars">
+											<img src = "media/images/star.png" class = "star">
+										</div>
+										<div class = "content">
+											<p>Предлогают компанию машенников для оплаты билетов. В случае отмены рейса деньги вернуть невозможно. Поробуйте дозвониться хоть на один предложенный номер, потом принимайте решение о покупке билетов. Ни один номер не действителен</p>
+										</div>
+									</div>
+								</div>
+								<div class = "review">
+									<div class = "left">
+										<div class = "name">
+											<p>Гость</p>
+										</div>
+										<div class = "user-img">
+											<img src = "media/images/user.png" class = "profile-image">
+										</div>
+									</div>
+									<div class = "right">
+										<div class = "stars">
+											<img src = "media/images/star.png" class = "star">
+											<img src = "media/images/star.png" class = "star">
+										</div>
+										<div class = "content">
+											<p>FlightPool предлогают платежную систему one two trip. У них нет контактов, номера тел липовые. При отмене рейса деньги вернуть сложно.только по судебному решению. Не повторяйте ошибок! Выбирайте надежные компании</p>
+										</div>
+									</div>
+								</div>
+								<div class = "review">
+									<div class = "left">
+										<div class = "name">
+											<p>Марина</p>
+										</div>
+										<div class = "user-img">
+											<img src = "media/images/user.png" class = "profile-image">
+										</div>
+									</div>
+									<div class = "right">
+										<div class = "stars">
+											<img src = "media/images/star.png" class = "star">
+											<img src = "media/images/star.png" class = "star">
+											<img src = "media/images/star.png" class = "star">
+											<img src = "media/images/star.png" class = "star">
+											<img src = "media/images/star.png" class = "star">
+										</div>
+										<div class = "content">
+											<p>Отличный сервис. Удобные сайт и приложения, в котором всегда можно увидеть выгодные предложения на авиабилеты. Покупал тут билет до Пхукета. Вышло очень дёшево.</p>
+										</div>
+									</div>
+								</div>
+								<div class = "review">
+									<div class = "left">
+										<div class = "name">
+											<p>Кирилл</p>
+										</div>
+										<div class = "user-img">
+											<img src = "media/images/user.png" class = "profile-image">
+										</div>
+									</div>
+									<div class = "right">
+										<div class = "stars">
+											<img src = "media/images/star.png" class = "star">
+										</div>
+										<div class = "content">
+											<p>Самая худшая компания что есть!один развод!хамят,грубят!</p>
+										</div>
+									</div>
+								</div>
+								<div class = "review">
+									<div class = "left">
+										<div class = "name">
+											<p>Ред Вингс</p>
+										</div>
+										<div class = "user-img">
+											<img src = "media/images/user.png" class = "profile-image">
+										</div>
+									</div>
+									<div class = "right">
+										<div class = "stars">
+											<img src = "media/images/star.png" class = "star">
+											<img src = "media/images/star.png" class = "star">
+											<img src = "media/images/star.png" class = "star">
+											<img src = "media/images/star.png" class = "star">
+											<img src = "media/images/star.png" class = "star">
+										</div>
+										<div class = "content">
+											<p>Бюджетные билеты и прекрасный сервис - регистрация прошла быстро, посадка без задержек, чистый салон, комфортные кресла, сравнивать с эир астаной вообще нет смысла. Разные компании, разные ценовые предложения. Предпочтение отдаю FlightPool</p>
+										</div>
+									</div>
+								</div>
+								<div class = "review">
+									<div class = "left">
+										<div class = "name">
+											<p>Ямал</p>
+										</div>
+										<div class = "user-img">
+											<img src = "media/images/user.png" class = "profile-image">
+										</div>
+									</div>
+									<div class = "right">
+										<div class = "stars">
+											<img src = "media/images/star.png" class = "star">
+											<img src = "media/images/star.png" class = "star">
+											<img src = "media/images/star.png" class = "star">
+										</div>
+										<div class = "content">
+											<p>Летели данной авиакомпанией 10.05.2023 в Анталию с детьми. Начитались тут страшилок и реально было страшно. Но оказалось отличная компания цены и качество , рейс летел без задержек и туда и обратно ,кормили очень даже хорошо, персонал очень приветливый. Единственный минус это действительно очень плотно сидения от слова совсем.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class = "zagol">
+							<h1 id = "6">Запись на закрытые акции</h1>
+						</div>
+						<div class = "third">
+							<div class = "form2">
+								<form>
+									<div class = "paragraph">
+										<label class = "test-0-fd">Email</label>
+										<input type="email" placeholder="Введите свою почту" required="required">
+									</div>
+									<div class = "paragraph paragraph2">
+										<input type="button" value="Подписаться" required="required" class = "test-0-sbs">
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class = "white">
+						</div> 
+					</main>
+					<footer>
+						<div class = "container-footer">
+							<div>
+								<a href = "#1"><img src = "media/images/logo.png" alt = "Логотип" class = "test-0-logo "></a>
+							</div>
+							<div class = "phone">
+								<span class = "test-0-phone">Телефон для связи<br/>"8-(800)-100-10-10"</span>
+							</div>
+							<div class = "navmenu">
+								<div class = "navbut">
+									<span><a href = "#2" class = "navbut1">Принципы накопления<br/>бронирований</a></span>
+								</div>
+								<div class = "navbut">
+									<span><a href = "#3" class = "navbut1">Поиск билетов</a></span>
+								</div>
+								<div class = "navbut">
+									<span><a href = "#4" class = "navbut1">Акции</a></span>
+								</div>
+								<div class = "navbut">
+									<span><a href = "#5" class = "navbut1">Отзывы</a></span>
+								</div>
+								<div class = "navbut">
+									<span><a href = "#6" class = "navbut1">Запись на<br/>закрытые акции</a></span>
+								</div>
+							</div>
+						</div>
+					</footer>
+					<script>
+						jQuery(document).ready(function(){
+							jQuery('.bxslider').bxSlider({
+								autoStart: true,
+								auto: true,
+								pause: 4000,
+								autoDirection: 'next',
+								autoHover: true,
+								mode: "fade"
+							});
+						});
+					</script>
+				</body>
+				</html>

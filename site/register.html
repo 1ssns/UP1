@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Регистрация</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header id = "1">
+		<div class = "container">
+			<div>
+				<img src = "media/images/logo.png" alt = "Логотип" class = "test-0-logo ">
+			</div>
+			<div class = "menu1">
+				<ul class = "menu">
+					<li><a class = "test-0-nav-1" href="index.html#4">Акции</a></li>
+					<li><a class = "test-0-nav-2" href="index.html#3">Поиск</a></li>
+					<li><a class = "test-0-nav-4" href="register.html">Личный кабинет</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class = "register-container">
+			<div class = "registr">
+				<div class = "punkt">
+					<h1 class = "centertext paddingbot">Регистрация</h1>
+				</div>
+				<form id = "registrationForm">
+					<div class = "punkt">
+						<label class = "punktik firstik">Имя: </label>
+						<input type="input" class = "test-2-name" required="required">
+					</div>
+					<div class = "punkt">
+						<label class = "punktik">Фамилия: </label>
+						<input type="input" class = "test-2-last" required="required">
+					</div>
+					<div class = "punkt">
+						<label class = "punktik">Номер документа: </label>
+						<input type="input" class = "test-2-doc" required="required">
+					</div>
+					<div class = "punkt">
+						<label class = "punktik">Телефон: </label>
+						<input type="tel" class = "test-2-phone" required="required">
+					</div>
+					<div class = "punkt">
+						<label class = "punktik">Пароль: </label>
+						<input type="password" class = "test-2-pass" required="required" id = "password">
+					</div>
+					<div class = "punkt">
+						<label class = "punktik">Повтор пароля: </label>
+						<input type="password" class = "test-2-pass2" required="required" id = "repeatPassword">
+					</div>
+					<div class = "punkt centersubmit">
+						<input type="submit" class = "test-2-btn" required="required" value="Зарегистрироваться">
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class = "container-footer-search">
+			<div>
+				<a href = "index.html#1"><img src = "media/images/logo.png" alt = "Логотип" class = "test-0-logo "></a>
+			</div>
+			<div class = "phone">
+				<span class = "test-0-phone">Телефон для связи<br/>"8-(800)-100-10-10"</span>
+			</div>
+			<div class = "navmenu">
+				<div class = "navbut">
+					<span><a href = "index.html#2" class = "navbut1">Принципы накопления<br/>бронирований</a></span>
+				</div>
+				<div class = "navbut">
+					<span><a href = "index.html#3" class = "navbut1">Поиск билетов</a></span>
+				</div>
+				<div class = "navbut">
+					<span><a href = "index.html#4" class = "navbut1">Акции</a></span>
+				</div>
+				<div class = "navbut">
+					<span><a href = "index.html#5" class = "navbut1">Отзывы</a></span>
+				</div>
+				<div class = "navbut">
+					<span><a href = "index.html#6" class = "navbut1">Запись на<br/>закрытые акции</a></span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		document.getElementById('registrationForm').addEventListener('submit', function(event) {
+			event.preventDefault();
+			var password = document.getElementById("password").value;
+			var repeatPassword = document.getElementById('repeatPassword').value;
+			if (password.length < 7) {
+				alert('Пароль должен содержать не менее 7 символов');
+			}
+			else if (password != repeatPassword) {
+				alert('Пароли не совпадают');
+			} 
+			else if (!/[0-9]/.test(password)) {
+				alert("Пароль должен содержать хотя бы 1 цифру");
+			}
+			else if(!/[!$]/.test(password)){
+				alert("Пароль должен содержать хотя бы один из символов: !,, $")
+			}
+			else {
+				window.location.href = 'login.html';
+			}
+		});
+	</script>
+</body>
+</html>
